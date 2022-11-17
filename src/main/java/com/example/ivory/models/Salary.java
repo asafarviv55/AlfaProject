@@ -13,8 +13,8 @@ public class Salary {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-        @Column(name = "employee_code")
-    private int employee_code;
+        @Column(name = "id")
+    private Long id;
 
 
     @Column(name = "month")
