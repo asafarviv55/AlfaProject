@@ -1,4 +1,4 @@
-package com.example.ivory.models;
+package com.example.alfa.models;
 
 
 import lombok.Data;

@@ -1,10 +1,10 @@
-package com.example.ivory;
+package com.example.alfa;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IvoryApplicationTests {
+class AlfaApplicationTests {
 
     @Test
     void contextLoads() {

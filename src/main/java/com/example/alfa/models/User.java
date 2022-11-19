@@ -1,8 +1,7 @@
-package com.example.ivory.models;
+package com.example.alfa.models;
 
 
 import lombok.Data;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
 
