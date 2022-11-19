@@ -12,6 +12,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Slf4j
 @RestController
 @RequestMapping("/api/ivory")
@@ -25,7 +27,7 @@ public class Controller {
 
 
     @GetMapping("register")
-    public void Register(@RequestParam String username, @RequestParam String password) {
+    public void register(@RequestParam String username, @RequestParam String password) {
         logger.info("Register enter.. username: " + username + " password: " +password);
         userService.register(username,password);
     }
@@ -47,6 +49,11 @@ public class Controller {
         userService.findById(id);
     }
 
+    @GetMapping("users")
+    public List<User> getAllUsers() {
+        logger.info("getUserById enter.. : ");
+        return userService.findAll();
+    }
 
 
 
