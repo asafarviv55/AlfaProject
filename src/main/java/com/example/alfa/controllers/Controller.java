@@ -16,7 +16,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/ivory")
+@RequestMapping("/api/alfa")
 public class Controller {
 
 
