@@ -3,11 +3,13 @@ package com.example.alfa.services;
 
 import com.example.alfa.exceptions.NoDataFoundException;
 import com.example.alfa.exceptions.UserNotFoundException;
+import com.example.alfa.models.Employee;
 import com.example.alfa.models.User;
 import com.example.alfa.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Service
@@ -16,7 +18,7 @@ public class UserService implements IUserService {
 
     @Autowired
     UserRepository userRepository;
-
+    public static HashMap<Integer,Employee> employeeCache = new HashMap<Integer, Employee>();
 
 
     public User login(String username, String password) {
